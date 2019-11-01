@@ -22,11 +22,9 @@ module.exports = function (mixins) {
 			disabled: PropTypes.bool            // only applies to buttons
 		},
 
-		getDefaultProps: function () {
-			return {
-				component: 'span',
-				classBase: 'Tappable'
-			};
+		defaultProps: {
+			component: 'span',
+			classBase: 'Tappable'
 		},
 
 		render: function () {

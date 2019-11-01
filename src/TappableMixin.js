@@ -41,14 +41,12 @@ var Mixin = {
 		onKeyUp: PropTypes.func,               // pass-through key event
 	},
 
-	getDefaultProps: function () {
-		return {
-			activeDelay: 0,
-			allowReactivation: true,
-			moveThreshold: 100,
-			pressDelay: 1000,
-			pressMoveThreshold: 5
-		};
+	defaultProps: {
+		activeDelay: 0,
+		allowReactivation: true,
+		moveThreshold: 100,
+		pressDelay: 1000,
+		pressMoveThreshold: 5
 	},
 
 	getInitialState: function () {
